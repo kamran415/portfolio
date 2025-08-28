@@ -1,0 +1,90 @@
+<div class="page">
+  <!-- Header / Hero -->
+  <header class="hero card">
+    <div class="avatar">
+      <img src="assets/kamran.jpg" alt="Profile: Mohd Kamran" />
+    </div>
+    <h1>{{ name }}</h1>
+    <p class="subtitle">Software Developer • Full‑Stack Enthusiast</p>
+    <div class="contacts">  
+      <a class="chip" [href]="'mailto:' + email">📧 {{ email }}</a>
+      <span class="chip">📱 {{ phone }}</span>
+      <span class="chip">📍 {{ location }}</span>
+      <a class="btn" [href]="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn alt" [href]="linktree" target="_blank" rel="noopener">Portfolio</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="card gradient-blue">
+    <h2>✨ About Me</h2>
+    <p>
+      Highly motivated and detail‑oriented software developer with 1.5+ years of experience
+      in building scalable and user‑friendly applications. Proficient in Java, Spring Boot,
+      Hibernate, Microservices, AWS DynamoDB, MySQL, Flutter, and Angular. Passionate about
+      continuous learning, problem solving, and contributing to impactful projects.
+    </p>
+  </section>
+
+  <!-- Work Experience -->
+  <section class="card gradient-pink">
+    <h2>💼 Work Experience</h2>
+    <h3>Software Developer — Crudags Technology Pvt Ltd</h3>
+    <p class="muted">Dec 2023 – Present</p>
+    <ul>
+      <li>Developed scalable APIs with Java, Spring Boot, Hibernate, and Microservices.</li>
+      <li>Built UIs using Flutter and Dart for sports management applications.</li>
+      <li>Implemented Admin Panel using Angular & Material UI.</li>
+      <li>Designed microservices‑based architecture ensuring scalability.</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section class="card gradient-sunrise">
+    <h2>🚀 Projects</h2>
+    <div class="grid">
+      <div class="project">
+        <h4>TechBlogs</h4>
+        <p>{{ projects[0].desc }}</p>
+        <span class="stack">{{ projects[0].stack }}</span>
+      </div>
+      <div class="project">
+        <h4>NoteTaker</h4>
+        <p>{{ projects[1].desc }}</p>
+        <span class="stack">{{ projects[1].stack }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="card gradient-mint">
+    <h2>🛠 Skills</h2>
+    <div class="chips">
+      <span class="pill" *ngFor="let s of skills">{{ s }}</span>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="card gradient-gold">
+    <h2>🎓 Education</h2>
+    <ul>
+      <li><strong>B.Tech (IT)</strong> — Bansal Institute of Engineering & Technology, Lucknow — 8.4 CGPA</li>
+      <li><strong>Intermediate</strong> — Birla Inter College, Sitapur — 74.6%</li>
+      <li><strong>High School</strong> — K Asif M P High School, Sitapur — 74%</li>
+    </ul>
+  </section>
+
+  <!-- Certifications & Achievements -->
+  <section class="card gradient-indigo">
+    <h2>🏅 Certifications & Achievements</h2>
+    <ul>
+      <li>Core Java — Codegrip; SQL & Java — HackerRank.</li>
+      <li>5⭐ Java Programming & 3⭐ Problem Solving on HackerRank.</li>
+      <li>Medal in Carrom Board Tournament — SRMU, Lucknow.</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>📩 Let’s connect and build something impactful together!</p>
+  </footer>
+</div>
