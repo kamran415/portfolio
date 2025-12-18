@@ -1,90 +1,122 @@
-<div class="page">
-  <!-- Header / Hero -->
-  <header class="hero card">
-    <div class="avatar">
-      <img src="assets/kamran.jpg" alt="Profile: Mohd Kamran" />
+<nav class="nav">
+  <div class="logo">JAVA.DEV</div>
+  <ul>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Tech</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="mailto:mokamran684@gmail.com" class="nav-btn">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div class="hero-img">
+    <img src="assets/kamran.jpg" alt="Mohd Kamran" />
+  </div>
+  <h1>Mohd Kamran</h1>
+  <h3>Java Backend Developer</h3>
+  <p>
+    Java-focused Software Engineer with <strong>1.5+ years of experience</strong> in building backend systems using Java, Spring Boot, Hibernate, and AWS.
+  </p>
+
+  <div class="contact-info">
+    📧 <a href="mailto:mokamran684@gmail.com">mokamran684@gmail.com</a> | 📞 9519633889 |
+    <a href="https://www.linkedin.com/in/md-kamran-aa6812357/" target="_blank">LinkedIn</a> |
+    <a href="http://linktr.ee/kamran_9021" target="_blank">Linktree</a>
+  </div>
+
+  <div class="hero-links">
+    <a href="mailto:mokamran684@gmail.com">Hire Me</a>
+    <a class="secondary" href="assets/UpdatedResume.pdf" target="_blank">Download Resume</a>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><h3>1.5+</h3><p>Years Experience</p></div>
+    <div class="stat"><h3>20+</h3><p>APIs Built</p></div>
+    <div class="stat"><h3>3</h3><p>Production Apps</p></div>
+  </div>
+</header>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Software Developer</h3>
+      <span>Crudags Technology Pvt Ltd · Dec 2023 – Present</span>
+      <ul>
+        <li>Designed and developed REST APIs using Java, Spring Boot & Hibernate.</li>
+        <li>Built Microservices architecture ensuring scalability and modularity.</li>
+        <li>Integrated AWS DynamoDB, MySQL, and SQS.</li>
+        <li>Worked on Angular admin panel and Flutter applications.</li>
+      </ul>
     </div>
-    <h1>{{ name }}</h1>
-    <p class="subtitle">Software Developer • Full‑Stack Enthusiast</p>
-    <div class="contacts">  
-      <a class="chip" [href]="'mailto:' + email">📧 {{ email }}</a>
-      <span class="chip">📱 {{ phone }}</span>
-      <span class="chip">📍 {{ location }}</span>
-      <a class="btn" [href]="linkedin" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn alt" [href]="linktree" target="_blank" rel="noopener">Portfolio</a>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>TechBlogs</h3>
+      <p>Developer-centric blogging platform.</p>
+      <ul>
+        <li>Java, JSP, Servlets, MySQL</li>
+        <li>Role-based access & CRUD APIs</li>
+      </ul>
     </div>
-  </header>
-
-  <!-- About -->
-  <section class="card gradient-blue">
-    <h2>✨ About Me</h2>
-    <p>
-      Highly motivated and detail‑oriented software developer with 1.5+ years of experience
-      in building scalable and user‑friendly applications. Proficient in Java, Spring Boot,
-      Hibernate, Microservices, AWS DynamoDB, MySQL, Flutter, and Angular. Passionate about
-      continuous learning, problem solving, and contributing to impactful projects.
-    </p>
-  </section>
-
-  <!-- Work Experience -->
-  <section class="card gradient-pink">
-    <h2>💼 Work Experience</h2>
-    <h3>Software Developer — Crudags Technology Pvt Ltd</h3>
-    <p class="muted">Dec 2023 – Present</p>
-    <ul>
-      <li>Developed scalable APIs with Java, Spring Boot, Hibernate, and Microservices.</li>
-      <li>Built UIs using Flutter and Dart for sports management applications.</li>
-      <li>Implemented Admin Panel using Angular & Material UI.</li>
-      <li>Designed microservices‑based architecture ensuring scalability.</li>
-    </ul>
-  </section>
-
-  <!-- Projects -->
-  <section class="card gradient-sunrise">
-    <h2>🚀 Projects</h2>
-    <div class="grid">
-      <div class="project">
-        <h4>TechBlogs</h4>
-        <p>{{ projects[0].desc }}</p>
-        <span class="stack">{{ projects[0].stack }}</span>
-      </div>
-      <div class="project">
-        <h4>NoteTaker</h4>
-        <p>{{ projects[1].desc }}</p>
-        <span class="stack">{{ projects[1].stack }}</span>
-      </div>
+    <div class="card">
+      <h3>NoteTaker</h3>
+      <p>Lightweight note management application.</p>
+      <ul>
+        <li>Hibernate, HQL, MySQL</li>
+        <li>MVC architecture</li>
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Skills -->
-  <section class="card gradient-mint">
-    <h2>🛠 Skills</h2>
-    <div class="chips">
-      <span class="pill" *ngFor="let s of skills">{{ s }}</span>
+<section id="skills">
+  <h2>Tech Stack</h2>
+  <div class="skills">
+    <div class="skill">Java</div>
+    <div class="skill">Spring Boot</div>
+    <div class="skill">Microservices</div>
+    <div class="skill">Hibernate</div>
+    <div class="skill">REST APIs</div>
+    <div class="skill">AWS DynamoDB</div>
+    <div class="skill">MySQL</div>
+    <div class="skill">Angular</div>
+    <div class="skill">Flutter</div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="grid">
+    <div class="card">
+      <ul>
+        <li>Core Java Certification — Codegrip</li>
+        <li>SQL Certification — HackerRank</li>
+        <li>Java Certification — HackerRank</li>
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Education -->
-  <section class="card gradient-gold">
-    <h2>🎓 Education</h2>
-    <ul>
-      <li><strong>B.Tech (IT)</strong> — Bansal Institute of Engineering & Technology, Lucknow — 8.4 CGPA</li>
-      <li><strong>Intermediate</strong> — Birla Inter College, Sitapur — 74.6%</li>
-      <li><strong>High School</strong> — K Asif M P High School, Sitapur — 74%</li>
-    </ul>
-  </section>
+<section id="education">
+  <h2>Education</h2>
+  <div class="grid">
+    <div class="card">
+      <ul>
+        <li><strong>B.Tech (IT)</strong> — BIET Lucknow (8.4 CGPA)</li>
+        <li>Intermediate — 74.6%</li>
+        <li>High School — 74%</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <!-- Certifications & Achievements -->
-  <section class="card gradient-indigo">
-    <h2>🏅 Certifications & Achievements</h2>
-    <ul>
-      <li>Core Java — Codegrip; SQL & Java — HackerRank.</li>
-      <li>5⭐ Java Programming & 3⭐ Problem Solving on HackerRank.</li>
-      <li>Medal in Carrom Board Tournament — SRMU, Lucknow.</li>
-    </ul>
-  </section>
-
-  <footer class="footer">
-    <p>📩 Let’s connect and build something impactful together!</p>
-  </footer>
-</div>
+<footer>
+  <p>© 2025 Mohd Kamran · Java Backend Developer</p>
+</footer>
