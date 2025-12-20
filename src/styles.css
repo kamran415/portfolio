@@ -1,2 +1,16 @@
-html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-body { background:#fff; }/* You can add global styles to this file, and also import other style files */
+:root {
+  --java-primary: #b07219;
+  --java-accent: #f89820;
+  --bg: #0b0f14;
+  --card: #121826;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #121826, #020617 70%);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.75;
+}
