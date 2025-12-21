@@ -1,1 +1,15 @@
-<nav>JAVA.DEV</nav>
+<nav class="nav">
+  <div class="logo">JAVA.DEV</div>
+  <ul>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Tech</a></li>
+    <li><a href="#education">Education</a></li>
+    <li>
+      <button class="theme-btn" (click)="theme.toggle()">
+        {{ theme.isDark() ? '☀️' : '🌙' }}
+      </button>
+    </li>
+    <li><a class="nav-btn" href="mailto:mokamran684@gmail.com">Contact</a></li>
+  </ul>
+</nav>

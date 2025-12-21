@@ -1,8 +1,135 @@
-<app-navbar></app-navbar>
-<app-hero></app-hero>
-<app-experience></app-experience>
-<app-projects></app-projects>
-<app-skills></app-skills>
-<app-certifications></app-certifications>
-<app-education></app-education>
-<app-footer></app-footer>
+<nav class="nav">
+  <div class="logo">JAVA.DEV</div>
+  <ul>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Tech</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><button class="theme-toggle" (click)="toggleTheme()">
+  {{ isDarkMode ? '🌞 Light' : '🌙 Dark' }}
+</button></li>
+    <li><a href="mailto:mokamran684@gmail.com" class="nav-btn">Contact</a></li>
+  </ul>
+  
+
+</nav>
+
+<header>
+  <div class="hero-img">
+    <img src="assets/kamran.jpg" alt="Mohd Kamran" />
+  </div>
+
+  <h1>Mohd Kamran</h1>
+  <h3>Java Backend Developer</h3>
+
+  <p>
+    Java-focused Software Engineer with <strong>1.5+ years of experience</strong> in building
+    backend systems and RESTful services using <strong>Java, Spring Boot, Microservices,
+    Hibernate</strong> with production exposure to AWS and databases.
+  </p>
+
+  <div class="contact-info">
+    📧 <a href="mailto:mokamran684@gmail.com">mokamran684@gmail.com</a>
+    &nbsp; | &nbsp; 📞 9519633889
+    &nbsp; | &nbsp;
+    <a href="https://www.linkedin.com/in/md-kamran-aa6812357/" target="_blank">LinkedIn</a>
+    &nbsp; | &nbsp;
+    <a href="http://linktr.ee/kamran_9021" target="_blank">Linktree</a>
+  </div>
+
+  <div class="hero-links">
+    <a href="mailto:mokamran684@gmail.com">Hire Me</a>
+    <a class="secondary" href="assets/UpdatedResume.pdf" target="_blank">
+      Download Resume
+    </a>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><h3>1.5+</h3><p>Years Experience</p></div>
+    <div class="stat"><h3>20+</h3><p>APIs Built</p></div>
+    <div class="stat"><h3>3</h3><p>Production Apps</p></div>
+  </div>
+</header>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Software Developer</h3>
+      <span>Crudags Technology Pvt Ltd · Dec 2023 – Present</span>
+      <ul>
+        <li>Designed REST APIs using Java, Spring Boot & Hibernate.</li>
+        <li>Microservices-based scalable backend systems.</li>
+        <li>AWS DynamoDB, MySQL, SQS integration.</li>
+        <li>Worked on Angular admin panel & Flutter apps.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>TechBlogs</h3>
+      <ul>
+        <li>Java, JSP, Servlets, MySQL</li>
+        <li>Role-based access & CRUD APIs</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>NoteTaker</h3>
+      <ul>
+        <li>Hibernate, HQL, MySQL</li>
+        <li>MVC Architecture</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Tech Stack</h2>
+  <div class="skills">
+    <div class="skill">Java</div>
+    <div class="skill">Spring Boot</div>
+    <div class="skill">Microservices</div>
+    <div class="skill">Hibernate</div>
+    <div class="skill">REST APIs</div>
+    <div class="skill">AWS DynamoDB</div>
+    <div class="skill">MySQL</div>
+    <div class="skill">Angular</div>
+    <div class="skill">Flutter</div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="grid">
+    <div class="card">
+      <ul>
+        <li>Core Java — Codegrip</li>
+        <li>SQL — HackerRank</li>
+        <li>Java — HackerRank</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="grid">
+    <div class="card">
+      <ul>
+        <li><strong>B.Tech (IT)</strong> — BIET Lucknow (8.4 CGPA)</li>
+        <li>Intermediate — 74.6%</li>
+        <li>High School — 74%</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Mohd Kamran · Java Backend Developer</p>
+</footer>
