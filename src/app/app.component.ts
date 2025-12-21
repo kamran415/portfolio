@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 
   isDarkMode = true;
+  isMenuOpen = false;
+
 
   ngOnInit(): void {
     const savedTheme = localStorage.getItem('theme');
@@ -27,4 +29,9 @@ export class AppComponent implements OnInit {
       localStorage.setItem('theme', 'light');
     }
   }
+
+  closeMenu(): void {
+  this.isMenuOpen = false;
+}
+
 }

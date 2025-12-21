@@ -1,12 +1,19 @@
 <nav class="nav">
   <div class="logo">JAVA.DEV</div>
-  <ul>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Tech</a></li>
-    <li><a href="#certifications">Certifications</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><button class="theme-toggle" (click)="toggleTheme()">
+    <button
+    class="menu-toggle"
+    (click)="isMenuOpen = !isMenuOpen"
+    aria-label="Toggle navigation"
+  >
+    ☰
+  </button> 
+  <ul [class.open]="isMenuOpen">
+    <li><a href="#experience" (click)="closeMenu()">Experience</a></li>
+    <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
+    <li><a href="#skills" (click)="closeMenu()">Tech</a></li>
+    <li><a href="#certifications" (click)="closeMenu()">Certifications</a></li>
+    <li><a href="#education" (click)="closeMenu()">Education</a></li>
+    <li><button class="theme-toggle" (click)="toggleTheme(); closeMenu()">
   {{ isDarkMode ? '🌞 Light' : '🌙 Dark' }}
 </button></li>
     <li><a href="mailto:mokamran684@gmail.com" class="nav-btn">Contact</a></li>
